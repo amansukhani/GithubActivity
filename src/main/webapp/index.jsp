@@ -15,7 +15,7 @@
     <title>Github Stalker</title>
   </head>
   <body>
-  <div id="core">
+  <div id="core" style = "background-color: #FFF4CE">
     <h2>What Have I Been Up To?</h2>
     <form action="index.jsp" method="GET">
       <div class="form-group">
@@ -36,6 +36,7 @@
       </button>
     </form>
     <div id="activity">
+
       <%if (user != null && !user.isEmpty()){%>
           <%=GithubQuerier.eventsAsHTML(user)%>
         <% } else { %>
